@@ -1,0 +1,33 @@
+# Dipendenze (mai nel repo per una libreria)
+node_modules/
+package-lock.json
+npm-shrinkwrap.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build / cache
+dist/
+build/
+coverage/
+.nyc_output/
+.turbo/
+.cache/
+
+# Env e segreti locali (mai committare chiavi reali)
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# IDE / OS
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+
+# Temp / log
+/tmp
+*.log

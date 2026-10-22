@@ -1,0 +1,90 @@
+{
+  "name": "zipsms",
+  "version": "0.1.0",
+  "description": "SDK JavaScript ufficiale per ZipSMS Gateway — invio SMS tramite il proprio dispositivo Android.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js",
+      "default": "./src/index.js"
+    },
+    "./react": {
+      "types": "./src/integrations/react.d.ts",
+      "import": "./src/integrations/react.js",
+      "default": "./src/integrations/react.js"
+    },
+    "./vue": {
+      "types": "./src/integrations/vue.d.ts",
+      "import": "./src/integrations/vue.js",
+      "default": "./src/integrations/vue.js"
+    },
+    "./angular": {
+      "types": "./src/integrations/angular.d.ts",
+      "import": "./src/integrations/angular.js",
+      "default": "./src/integrations/angular.js"
+    },
+    "./svelte": {
+      "types": "./src/integrations/svelte.d.ts",
+      "import": "./src/integrations/svelte.js",
+      "default": "./src/integrations/svelte.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test",
+    "test:watch": "node --test --watch"
+  },
+  "peerDependencies": {
+    "@angular/core": ">=16.0.0",
+    "react": ">=18.0.0",
+    "svelte": ">=4.0.0",
+    "vue": ">=3.3.0"
+  },
+  "peerDependenciesMeta": {
+    "@angular/core": {
+      "optional": true
+    },
+    "react": {
+      "optional": true
+    },
+    "svelte": {
+      "optional": true
+    },
+    "vue": {
+      "optional": true
+    }
+  },
+  "keywords": [
+    "zipsms",
+    "sms",
+    "gateway",
+    "sdk",
+    "android",
+    "react",
+    "vue",
+    "angular",
+    "svelte"
+  ],
+  "author": "Pasquale Cappa Spina <webmaster@pasqualecappaspina.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Pasquale-CS/ZipSMS-js-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Pasquale-CS/ZipSMS-js-sdk/issues"
+  },
+  "homepage": "https://github.com/Pasquale-CS/ZipSMS-js-sdk#readme"
+}
